@@ -1,11 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap");
 body {
   margin: 0;
   box-sizing: border-box;
+  font-family: "Ropa Sans", sans-serif;
 }
 
-h1 {
+h1,
+h2,
+h3, .characters-list {
   margin-block-start: 0;
   margin-block-end: 0;
+  padding-inline-start: 0;
 }
 
 header {
@@ -18,7 +23,52 @@ header {
   justify-content: center;
 }
 header h1 {
+  margin-left: 2rem;
   color: #FFD600;
+  font-size: 42px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+main {
+  background-color: #424242;
+  min-height: 70vh;
+}
+main .main-wrapper {
+  position: absolute;
+  top: -2rem;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+main aside {
+  background-color: rgb(137, 129, 129);
+  min-width: 300px;
+}
+main aside h2 {
+  text-align: center;
+}
+main aside.characters h2 {
+  background-color: #535556;
+}
+main aside.characters .characters-list {
+  list-style-type: none;
+}
+main aside.characters .characters-list li:nth-child(even) {
+  background-color: #748687;
+}
+main aside.characters .characters-list li:nth-child(odd) {
+  background-color: #E1DEDE;
+}
+main aside.characters .characters-list li:hover {
+  background-color: hotpink;
+}
+main aside.characters .pagination {
+  display: flex;
+  justify-content: center;
+}
+main aside.details h2 {
+  background-color: #748687;
 }
 
 /*# sourceMappingURL=style.css.map */
